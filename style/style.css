@@ -1,0 +1,100 @@
+:root {
+  --main-color: #2196F3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Alegreya", serif;
+  margin: 0;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.container .logo img {
+  width: 150px;
+}
+
+nav  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+nav  .links ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav   ul li a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+}
+
+ul{
+  list-style: none;
+}
+
+.landing-page {
+  background-image: url(../imag/images/baker\ background.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size:cover;
+  position: relative;
+}
+
+.landing-page .info{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.landing-page .info span {
+  font-size: 20px;
+}
+
+.landing-page .info h1 {
+  margin: 15px 0;
+  font-size: 45px;
+}
+
+.landing-page .info p {
+  margin: 0 0 25px;
+}
+
+.landing-page .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.landing-page .container .info .buttons button {
+  padding: 10px 15px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid white;
+  transition: .3s;
+  font-size: 16px;
+
+}
+
+.landing-page .container .info .buttons button:first-child {
+  background-color: var(--main-color);
+  border: none;
+}
+
+.landing-page .container .info .buttons button:hover {
+  background-color: white;
+  color: black;
+}
