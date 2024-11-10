@@ -1,5 +1,6 @@
 :root {
-  --main-color: #2196F3;
+  --main-color: #9c6f42;
+  --second-background-color: rgb(247, 247, 247);
 }
 
 * {
@@ -12,7 +13,7 @@ body {
 }
 
 .container {
-  width: 1140px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -20,73 +21,81 @@ body {
   width: 150px;
 }
 
-nav  {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
 }
 
-nav  .links ul {
+nav .links ul {
   display: flex;
   padding: 0;
   margin: 0;
 }
 
-nav   ul li a {
+nav ul li a {
   display: inline-block;
   padding: 10px 15px;
   text-decoration: none;
   color: white;
+  font-size: 18px;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
 .landing-page {
-  background-image: url(../imag/images/baker\ background.jpg);
+  background-image: url(../images/imag/baker-background.jpg);
   width: 100%;
   height: 100vh;
-  background-size:cover;
+  background-size: cover;
   position: relative;
 }
 
-.landing-page .info{
+.landing-page .info {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
 .landing-page .info span {
-  font-size: 20px;
+  font-size: 30px;
+  /* font-weight: 400; */
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .landing-page .info h1 {
-  margin: 15px 0;
+  margin: 0;
   font-size: 45px;
+  color: white;
 }
 
 .landing-page .info p {
-  margin: 0 0 25px;
+  margin: 0;
+  color: white;
+  font-size: 20px;
 }
 
 .landing-page .buttons {
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin-top: 15px;
 }
 
 .landing-page .container .info .buttons button {
-  padding: 10px 15px;
+  padding: 15px 25px;
   background-color: transparent;
   border-radius: 5px;
   border: 2px solid white;
-  transition: .3s;
-  font-size: 16px;
-
+  transition: 0.3s;
+  font-size: 14px;
+  color: white;
 }
 
 .landing-page .container .info .buttons button:first-child {
@@ -97,4 +106,106 @@ ul{
 .landing-page .container .info .buttons button:hover {
   background-color: white;
   color: black;
+}
+
+/* Start About */
+
+.about-section .container .content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.about-section .container .content .image {
+  width: 40%;
+}
+
+.about-section .container .content .image img {
+  width: 100%;
+}
+
+.about-section .container .content .info {
+  width: 55%;
+}
+
+.about-section .container .content .info h2 {
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+
+.about-section .container .content .info p {
+  font-family: "Alegreya Sans";
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.about-section .container .content .info .features {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-section .container .content .info .features .feature-item {
+  display: flex;
+  align-items: center;
+}
+
+.about-section .container .content .info .features .feature-item span {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #00000026;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.about-section .container .content .info .features .feature-item span img {
+  width: 20px;
+}
+
+.about-section .container .content .info .features .feature-item p {
+  color: #777;
+}
+
+/* Start Location */
+
+.location {
+  background-color: var(--second-background-color);
+}
+
+.location .container .content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.location .container .content .text-section {
+  width: 55%;
+}
+
+.location .container .content .text-section h2 {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.location .container .content .text-section p {
+  line-height: 1.8;
+  color: #777;
+  font-size: 15px;
+}
+
+.location .container .content .image {
+  width: 40%;
+}
+
+.location .container .content .image img {
+  width: 100%;
 }
