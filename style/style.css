@@ -47,7 +47,7 @@ ul {
 }
 
 .landing-page {
-  background-image: url(../images/imag/baker-background.jpg);
+  background-image: url(../images/baker\ background.jpg);
   width: 100%;
   height: 100vh;
   background-size: cover;
