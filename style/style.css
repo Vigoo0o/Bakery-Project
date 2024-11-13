@@ -25,28 +25,28 @@ body {
 }
 
 /* The Container Media Query The Same In The Bootstrap */
-/* Small */
+/* Small-v */
 @media (min-width: 576px) {
   .container {
     width: 540px;
   }
 }
 
-/* Medium */
+/* Medium-i */
 @media (min-width: 768px) {
   .container {
     width: 720px;
   }
 }
 
-/* Large */
+/* Large-g */
 @media (min-width: 992px) {
   .container {
     width: 960px;
   }
 }
 
-/* X-Large */
+/* X-Large-o */
 @media (min-width: 1200px) {
   .container {
     width: 1140px;

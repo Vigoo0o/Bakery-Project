@@ -19,6 +19,7 @@ function handleBurgerIcon() {
   let header = document.querySelector("header");
   let currentBgColorOfHeader = window.getComputedStyle(header).backgroundColor;
 
+  console.log("This Feture Developed By Vigo");
   if (burgerIcon.classList.contains("clicked")) {
     // Hendle Header Background
     if (currentBgColorOfHeader != "rgba(156, 111, 66, 0.56)") {
