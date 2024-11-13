@@ -1,0 +1,4 @@
+
+- Media Query Review:
+  -- min-width: 100px; --> Means When Width Largar Than Or Equal 100px
+  -- max-width: 100px; --> Means When Width Smaller Than Or Equal 100px
