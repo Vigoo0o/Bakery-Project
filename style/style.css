@@ -341,6 +341,11 @@ ul {
   margin-bottom: 5px;
 }
 
+.contact .container .content .location {
+  width: 400px;
+  margin-left: 30px;
+}
+
 /* Start Container */
 
 footer {
